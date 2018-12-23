@@ -1,3 +1,22 @@
-.todo {
-  color: #fff
+@import "../../node_modules/@kuen/ui/src/stylus/settings/_elevations.styl"
+
+// basic-shadow
+.lg-header, .lg-rail-sidebar, .lg-article {
+  elevation(1)
+}
+
+.lg-article {
+  &:not(.lg-content) {
+    elevation(1)
+  }
+
+  section {
+    elevation(1)
+
+    elevationTransition()
+
+    &:hover {
+      elevation(8)
+    }
+  }
 }

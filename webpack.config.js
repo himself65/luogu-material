@@ -6,11 +6,6 @@ const path = require('path')
 const isProd = process.env.NODE_ENV === 'production'
 const extractCSS = isProd || process.env.TARGET === 'development'
 
-const cssLoader = [
-  'style-loader',
-  'css-loader'
-]
-
 const stylusLoader = [
   extractCSS ? MiniCssExtractPlugin.loader : 'style-loader',
   { loader: 'css-loader', options: { sourceMap: !isProd } },
@@ -27,11 +22,6 @@ module.exports = {
   },
   module: {
     rules: [
-      {
-        test: /\.css$/,
-        exclude: /node_modules/,
-        use: cssLoader
-      },
       {
         test: /\.styl(us)?$/,
         use: stylusLoader
