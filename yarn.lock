@@ -90,10 +90,10 @@
     lodash "^4.17.10"
     to-fast-properties "^2.0.0"
 
-"@kuen/ui@^0.1.5-alpha.4":
-  version "0.1.5-alpha.4"
-  resolved "http://registry.npm.taobao.org/@kuen/ui/download/@kuen/ui-0.1.5-alpha.4.tgz#5be9d99ede65092091e805fa12d63761eebf7208"
-  integrity sha1-W+nZnt5lCSCR6AX6EtY3Ye6/cgg=
+"@kuen/ui@^0.1.5-alpha.6":
+  version "0.1.5-alpha.6"
+  resolved "http://registry.npm.taobao.org/@kuen/ui/download/@kuen/ui-0.1.5-alpha.6.tgz#1695fc1052f9c2905f962bcfb0ff36f7ebdd3d08"
+  integrity sha1-FpX8EFL5wpBflivPsP829+vdPQg=
 
 "@types/node@^10.12.18":
   version "10.12.18"
@@ -1606,10 +1606,10 @@ eslint-visitor-keys@^1.0.0:
   resolved "http://registry.npm.taobao.org/eslint-visitor-keys/download/eslint-visitor-keys-1.0.0.tgz#3f3180fb2e291017716acb4c9d6d5b5c34a6a81d"
   integrity sha1-PzGA+y4pEBdxastMnW1bXDSmqB0=
 
-eslint@^5.8.0:
-  version "5.10.0"
-  resolved "http://registry.npm.taobao.org/eslint/download/eslint-5.10.0.tgz#24adcbe92bf5eb1fc2d2f2b1eebe0c5e0713903a"
-  integrity sha1-JK3L6Sv16x/C0vKx7r4MXgcTkDo=
+eslint@^5.11.0:
+  version "5.11.0"
+  resolved "http://registry.npm.taobao.org/eslint/download/eslint-5.11.0.tgz#51a0e70f137a425fe044cd48273b96f28a774b1f"
+  integrity sha1-UaDnDxN6Ql/gRM1IJzuW8op3Sx8=
   dependencies:
     "@babel/code-frame" "^7.0.0"
     ajv "^6.5.3"
