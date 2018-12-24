@@ -1,0 +1,33 @@
+@import "../../node_modules/@kuen/ui/src/setting.styl"
+
+$header-color := #6200ee
+
+.lg-header {
+  border 0
+  background $header-color
+  color #fff !important
+
+  .lg-header-li:hover {
+    color #fff !important
+  }
+
+  li, .am-input-group-label {
+    background-color $header-color
+  }
+
+  .am-dropdown-content {
+    background-color #fff
+
+    li {
+      background-color transparent
+    }
+  }
+
+  .am-form-field {
+    background-color transparent
+  }
+
+  .am-form-field, .am-input-group-label {
+    border 0
+  }
+}

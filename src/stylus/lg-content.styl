@@ -1,0 +1,42 @@
+@import "../../node_modules/@kuen/ui/src/setting.styl"
+
+$link-color := #2962ff
+
+.lg-content {
+
+  a:not(.am-btn) {
+    color $link-color
+  }
+
+  h1, h2, h3, h4, h5, h6, p {
+    color: $theme-light.text.primary
+  }
+
+  .am-comment-main {
+    // benben
+
+    .am-comment-hd {
+      .feed-reply {
+        color $link-color
+      }
+    }
+
+    border-radius 2px
+
+    // shadow
+    elevation(1)
+
+    // ---------
+    // remove before style
+    // ---------
+
+    &:before, &:after {
+      content none
+    }
+    border 0
+  }
+
+  .am-nav > li.am-active > a, .am-nav > li.am-active > a:focus, .am-nav > li.am-active > a:hover {
+    background $link-color
+  }
+}

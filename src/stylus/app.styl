@@ -1,6 +1,10 @@
-// fixme: cant resolve
-// @import "ui/generic.styl"
-@import "../../node_modules/@kuen/ui/src/generic.styl"
+// fixme: cant resolve alias
+@import "../../node_modules/@kuen/ui/src/setting.styl"
+@import "./settings/level.styl"
+
+@import "./lg-content.styl"
+@import "./lg-header.styl"
+@import "./lg-sidebar.styl"
 
 // basic-shadow
 .lg-header, .lg-rail-sidebar, .lg-article {
@@ -13,12 +17,21 @@
   }
 
   section {
+    // card
+    border 0
     elevation(1)
-
     elevationTransition()
 
     &:hover {
       elevation(8)
     }
   }
+}
+
+.am-comment-avatar {
+  border 0
+}
+
+.am-nav > li > a:focus, .am-nav > li > a:hover {
+  background transparent
 }

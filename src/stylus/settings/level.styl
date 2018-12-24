@@ -1,0 +1,26 @@
+@import "../../../node_modules/@kuen/ui/src/setting.styl"
+
+generate_level($level_color, $value)
+  .lg-fg-{$level_color}
+    color: $value !important
+  .lg-bg-{$level_color}
+    background-color: $value !important
+
+$luogu-color := {
+  'brown': $brown.darken-2,
+  'grey': $blue-grey.darken-2,
+  'yellow': $yellow.lighten-1,
+  'red': $red.darken-1,
+  'orange': $orange.lighten-1,
+  'purple': $purple.darken-1,
+  'green': $green.lighten-1,
+  'greendark': $green.darken-4,
+  'bluedark': $blue.darken-4,
+  'bluelight': $blue.lighten-1
+}
+
+create-level()
+  for $color_name, $color_value in $luogu-color
+    generate_level($color_name, $color_value)
+
+create-level()
