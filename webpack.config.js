@@ -13,6 +13,8 @@ const stylusLoader = [
   { loader: 'stylus-loader', options: { sourceMap: !isProd } }
 ]
 
+const resolve = (dir) => path.resolve(__dirname, dir)
+
 module.exports = {
   entry: path.resolve(__dirname, './src', 'main.js'),
   mode: isProd ? 'production' : 'development',
@@ -45,6 +47,19 @@ module.exports = {
         canPrint: false
       })
     ]
+  },
+  resolve: {
+    extensions: ['.js', '.styl'],
+    alias: {
+      'ui': resolve('node_modules/@kuen/ui/src')
+    },
+    modules: [
+      'node_modules',
+      resolve('node_modules')
+    ]
+  },
+  resolveLoader: {
+    modules: ['node_modules', path.resolve('node_modules')]
   },
   performance: {
     hints: false
